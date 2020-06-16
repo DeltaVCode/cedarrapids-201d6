@@ -1,4 +1,4 @@
-'use script';
+'use strict';
 //first thing to do
 console.log('This file is connected.');
 
