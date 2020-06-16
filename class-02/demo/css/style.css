@@ -1,0 +1,57 @@
+/* * {
+    outline: dotted;
+} */
+
+
+body {
+    margin: 0 auto;
+    width: 1000px;
+                     /*    red  green blue  opacity */
+    background-color: rgba(27,  71,  218,  .5);
+}
+main {
+    background-color: rgb(213, 245, 166);
+}
+header {
+    margin-bottom: 10px;
+}
+ul li {
+    display: inline;
+    padding: 10px;
+    background-color: rgb(85,136,212);
+    border-radius: 15px;
+}
+ol li {
+    display: inline;
+    padding: 10px;
+    background-color: rgb(85,136,212);
+    border-radius: 15px;
+}
+h1 {
+    background-color: hotpink;
+    color: #f50efd;
+    font-size: 50px;
+    text-shadow:2px 2px ivory;
+    margin-bottom: 20px;
+}
+nav {
+    background-color: rgb(44,94,141);
+    height: 250px;
+}
+section p.more-styles {
+
+    background-color: red;
+}
+
+.more-styles {
+color: white;
+background-color:  #0000FF;
+}
+
+#another-style {
+    border: 5px solid #00FF00;
+}
+
+footer {
+    margin-top: 15px;
+}
