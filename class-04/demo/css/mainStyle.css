@@ -1,0 +1,68 @@
+
+.parent {
+    top: -10px;
+    position: relative;
+    background-color: blue;
+}
+
+
+section {
+    margin-bottom: 150px;
+    background-color: chartreuse;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    right:0;
+    top: 0;
+}
+header {
+    margin-top: 55px;
+
+}
+a {
+    text-decoration:  none;
+    color: white;
+}
+body {
+    background-color: azure;
+    font-size: 20px;
+}
+main {
+    margin: 0 auto;
+    width: 1000px;
+    text-align: center;
+    text-justify: inter-word;
+}
+h1 {
+    text-align: center;
+    color: #5c5829;
+    font-size: 2em;
+}
+
+nav {
+    text-align: center;
+    margin-top: 25px;
+}
+nav ul {
+    border-top: 2px solid violet;
+    border-bottom: 2px solid violet;
+}
+nav li {
+    display: inline;
+    margin: 25px;
+}
+
+.price {
+   position: fixed;
+}
+
+img {
+ display: block;
+}
+footer { 
+    height: 175px;
+    width: 100%;
+    background-color: aquamarine;
+    position: fixed; 
+    bottom: 0;
+}
