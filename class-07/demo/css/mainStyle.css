@@ -1,0 +1,59 @@
+
+
+
+
+
+h1 {
+    text-align: center;
+    padding: 10px;
+    
+    font-size: 45px;
+}
+
+h2{
+    font-size: 40px;
+    padding: 10px;
+    text-align: center;
+}
+
+li { 
+    font-size: 30px;
+    padding: 10px;
+}
+
+p{ 
+    font-size: 25px;
+    margin: 30px;
+}
+
+img {
+    margin: 20px;
+    height: 200px;
+    width: 300px;
+
+}
+
+body {
+    margin: 0 auto;
+    width: 960px;
+}
+
+section{ 
+    clear: both;
+   
+}
+
+td {
+    border: 1px solid blue;
+}
+
+article {
+    text-align: center;
+    float: left;
+} 
+
+table {
+    width: 100%;
+    clear: both;
+    margin-bottom: 150px;
+}
