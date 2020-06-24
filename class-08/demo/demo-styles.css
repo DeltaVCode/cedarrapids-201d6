@@ -4,6 +4,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     color: #666;
+    padding-bottom: 150px;
 }
 
 a,
@@ -20,11 +21,52 @@ header {
     font-weight: bold;
 }
 
+.logo {
+    display: block;
+    font-size: 24px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.logo img {
+    display: block;
+    width: 200px;
+    margin: auto;
+}
+
+.logo span {
+    display: block;
+}
+
+nav {
+    width: 80%;
+    margin: auto; /*How to center a block that is not 100% width */
+    margin-top: 15px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+    background-color: rgba(255,255,255,0.2);
+}
+
+nav li {
+    display: inline-block;
+    padding: 15px;
+    background-color: rgba(255,255,255,0.2);
+}
+
 aside {
     color: #fff;
     text-align: center;
     padding: 15px;
     background-color: #97a8cf;
+    float: left;
+    width: 20%;
+    overflow: hidden;
+    box-sizing: border-box; /* Don't forget border-box if you're adding any additional width through padding, borders, etc. */
 }
 
 aside div {
@@ -38,12 +80,28 @@ aside img {
 }
 
 section {
+    padding: 15px;
+    float: left;
+    width: 80%;
+    box-sizing: border-box;
+}
 
+.clear-float {
+    clear: both;
+    overflow: hidden;
+}
+
+.relative-parent { /* when positioning non-static elements, they will position themselves to the screen, unless they have a parent with non-static positioning, such as relative */
+    position: relative;
 }
 
 footer {
     padding: 15px;
     text-align: center;
-    background-color: #5f719c;
+    background-color: red;
     color: #fff;
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
