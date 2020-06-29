@@ -39,7 +39,7 @@ function imageWasClicked(event){
   } else if(event.srcElement.id === '2'){
     allPizzas[pizzaIndex2].timesClicked++;
   }
-// } I removed this because it was in the wrong spot go to line
+// } I removed this because it was in the wrong spot go to line 74.
 
 //Add logic so that we dont see the same images from click to click.
 var nextPizzaIndex1 = Math.floor(Math.random() * allPizzas.length);
