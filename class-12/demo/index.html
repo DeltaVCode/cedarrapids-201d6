@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Pizza Tracker</title>
+
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/mainStyle.css">
+
+</head>
+
+<header>
+    <marquee
+        style="font-size: 25px; height: 75px; padding-top:30px; color: white; background-color:rgb(236, 9, 27); border-bottom: 2px solid rgb(25, 236, 88);">
+        Disclaimer: All pizza is good!
+    </marquee>
+</header>
+<body>
+    <main>
+        <h1>Welcome to the Pizza Tracker, Choose wisely....</h1>
+
+        <aside> 
+            <h2>Vote Results</h2>
+            <ul id="voteResults"></ul>
+        </aside>
+
+
+        <img id="1" src="images/newYorkPizza.jpeg" />
+        <img id="2" src="images/detroitPizza.jpeg" />
+
+    </main>
+    <footer>
+        <p>Vote on some pizza!</p>
+        <!-- Add the Canvas tag -->
+        <canvas id="resultsChart" width="400" height="400"></canvas>
+    </footer>
+
+    <!-- Add in the link to the chart CDN -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
