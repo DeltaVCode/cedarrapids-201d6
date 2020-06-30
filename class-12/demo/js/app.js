@@ -86,19 +86,21 @@ function imageWasClicked(event){
     }
     // footerElement.textContent = 'You voted on 5 pizzas good work.';
     var asideUL = document.getElementById('voteResults');
-
     for(var x = 0; x < allPizzas.length; x++){
       var voteResultListItem = document.createElement('li');
       // adding a template literal to utilize the object properties.
       voteResultListItem.textContent = `${allPizzas[x].name} was clicked on ${allPizzas[x].timesClicked} times and was shown ${allPizzas[x].timesShown} times.`;
       asideUL.appendChild(voteResultListItem);
-
+      //Add another li in the for loop for more data on the images being clicked.
       var percentageListItem = document.createElement('li');
       if(allPizzas[x].timesClicked === 0){
-        var math = `ZERO clicks and shown ${allPizzas.timesShown} times.`;
+        //Undefined error fixed below.
+        //Here is where we were getting the undefined below that is commented out
+        // var math = `ZERO clicks and shown ${allPizzas.timesShown} times.`;
+        //------here is the code that gets the timesShown at x from the for loop.
+        var math = `ZERO clicks and shown ${allPizzas[x].timesShown} times.`;
       } else {
-        console.log(allPizzas[x].timesShown);
-        math = Math.round(((allPizzas[x].timesClicked / allPizzas[x].timesShown).toFixed(2) * 100)) + '%';
+        math = Math.round(((allPizzas[x]['timesClicked'] / allPizzas[x]['timesShown']).toFixed(2) * 100)) + '%';
       }
       percentageListItem.textContent = `${allPizzas[x].name} percentage of clicked on VS times shown is ` + math;
 
