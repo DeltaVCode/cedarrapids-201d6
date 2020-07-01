@@ -7,8 +7,9 @@ var imageElements = document.getElementsByTagName('img');
 
 var pizzaIndex1 = 0;
 var pizzaIndex2 = 1;
-var rounds = 5;
+var rounds = 2;
 var allPizzas = [];
+
 
 //Add a constructor function for our pizzas
 function Pizza(name, imageUrl, timesClicked){
@@ -25,6 +26,8 @@ function Pizza(name, imageUrl, timesClicked){
   this.timesShown = 0;
   allPizzas.push(this);
 }
+
+
 
 //Create function for the chart render so that we can access the object properties.
 function getPizzaArray(nameOfThePropertyIWant){
@@ -60,20 +63,23 @@ if(savedPizzaString){
 
 } else {
 //create pizza objects
+  new Pizza('New York Thin', 'images/newYorkPizza.jpeg');
+  new Pizza('Detroit Style', 'images/detroitPizza.jpeg');
   new Pizza('Brick Oven Pizza', 'images/brickOvenPizza.jpeg');
   new Pizza('Calzone', 'images/calzonePizza.jpeg');
   new Pizza('Chicago Deep Dish', 'images/chicagoPizza.jpeg');
   new Pizza('Chicago Pizza and Oven Grinder', 'images/cpoGinderPizza.jpeg');
-  new Pizza('Detroit Style', 'images/detroitPizza.jpeg');
   new Pizza('Papa Vito\'s Thin', 'images/mwDeluxePizzaThinCrust.jpg');
-  new Pizza('New York Thin', 'images/newYorkPizza.jpeg');
   new Pizza('Detroit Style', 'images/sgDansHtossedMeatLovPizza.jpg');
 
 }
-
 allPizzas[0].timesShown = 1;
 allPizzas[1].timesShown = 1;
-
+//Lets count the first images that show up.
+// for(var i = 0; i < 2; i++){
+//   allPizzas[i].timesShown++;
+//   console.log(allPizzas[i]);
+// }
 
 var totalClicks = 0;
 function imageWasClicked(event){
@@ -110,13 +116,7 @@ function imageWasClicked(event){
   allPizzas[pizzaIndex2].timesShown++;
 
 
-  //Lets count the first images that show up. 
- 
   
-  // for(var i = 0; i < 2; i++){
-  //   allPizzas[i].timesShown++;
-  //   console.log(allPizzas[i]);
-  // }
 
 
 
